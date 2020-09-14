@@ -16,6 +16,9 @@ namespace PagueBem
         public FrmPrincipal()
         {
             InitializeComponent();
+            this.dataGridView1.Refresh();
+            this.dataGridView1.RefreshEdit();
+            this.dataGridView1.Update();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -36,7 +39,8 @@ namespace PagueBem
 
         private void btnCad_Debito_Click(object sender, EventArgs e)
         {
-            Cadastro_Debito cad_deb = new Cadastro_Debito(Convert.ToInt32(txbStatus.Text), Convert.ToDouble(txbValor.Text), txbDataPagamento.Value.ToString("yyyy/MM/dd"), txbData_a_Pagar.Value.ToString("yyyy/MM/dd"));
+            Cadastro_Debito cad_deb = new Cadastro_Debito(txbStatus.Text, Convert.ToDouble(txbValor.Text), DateTime.Now.ToString("yyyy/MM/dd"),
+                 txbData_a_Pagar.Value.ToString("yyyy/MM/dd"),Convert.ToInt32 (cbCliente.SelectedValue.ToString()));
             MessageBox.Show(cad_deb.mensagem);
             this.dataGridView1.Refresh();
 
@@ -45,11 +49,27 @@ namespace PagueBem
             this.dataGridView1.Update();
 
             txbStatus.Text = null;
-            txbValor.Text = null;
-            txbDataPagamento.Text = null;
+            txbValor.Text = null;            
             txbData_a_Pagar.Text = null;
+
+
+           
         }
 
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'paguebembdDataSet1.InnerJoinConsulta'. Você pode movê-la ou removê-la conforme necessário.
+            this.innerJoinConsultaTableAdapter.Fill(this.paguebembdDataSet1.InnerJoinConsulta);
+            // TODO: esta linha de código carrega dados na tabela 'paguebembdDataSet1.InnerJoinConsulta'. Você pode movê-la ou removê-la conforme necessário.
 
+            // TODO: esta linha de código carrega dados na tabela 'paguebembdDataSet1.pessoa'. Você pode movê-la ou removê-la conforme necessário.
+            this.pessoaTableAdapter1.Fill(this.paguebembdDataSet1.pessoa);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
