@@ -94,17 +94,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connector\Conexao.cs" />
+    <Compile Include="DataSet_Pessoa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Pessoa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Tabelas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Tabelas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Funcions\Controle.cs" />
     <Compile Include="Funcions\Cad_Debito.cs" />
     <Compile Include="Funcions\Cad_Pessoa.cs" />
-    <Compile Include="paguebembdDataSet.cs">
-      <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="paguebembdDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Form1.cs">
@@ -121,22 +123,34 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="paguebembdDataSet.xsc">
-      <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
+    <None Include="DataSet_Pessoa.xsc">
+      <DependentUpon>DataSet_Pessoa.xsd</DependentUpon>
     </None>
-    <None Include="paguebembdDataSet.xsd">
+    <None Include="DataSet_Pessoa.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>paguebembdDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSet_Pessoa.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="paguebembdDataSet.xss">
-      <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
+    <None Include="DataSet_Pessoa.xss">
+      <DependentUpon>DataSet_Pessoa.xsd</DependentUpon>
     </None>
+    <None Include="DataSet_Tabelas.xsc">
+      <DependentUpon>DataSet_Tabelas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Tabelas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Tabelas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_Tabelas.xss">
+      <DependentUpon>DataSet_Tabelas.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\businessmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\51yUXWbUHUL.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

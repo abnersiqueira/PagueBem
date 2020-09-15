@@ -26,11 +26,42 @@ namespace PagueBem.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=19954567;persistsecurityinfo=True;database" +
-            "=paguebembd")]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=abner;password=19954567;persistsecurityinfo=True;databas" +
+            "e=paguebembd")]
         public string paguebembdConnectionString1 {
             get {
                 return ((string)(this["paguebembdConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=root;password=19954567;database=paguebembd")]
+        public string paguebembd_connectionString {
+            get {
+                return ((string)(this["paguebembd_connectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=19954567;database=paguebembd")]
+        public string StringConexao_DataView {
+            get {
+                return ((string)(this["StringConexao_DataView"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=19954567;persistsecurityinfo=True;database" +
+            "=paguebembd")]
+        public string paguebembdConnectionString {
+            get {
+                return ((string)(this["paguebembdConnectionString"]));
             }
         }
     }
