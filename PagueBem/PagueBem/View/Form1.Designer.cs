@@ -92,44 +92,49 @@
             this.panel1.Controls.Add(this.btnCad_Debito);
             this.panel1.Controls.Add(this.txbValor);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(309, 4);
+            this.panel1.Location = new System.Drawing.Point(412, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(549, 131);
+            this.panel1.Size = new System.Drawing.Size(731, 161);
             this.panel1.TabIndex = 0;
             // 
             // lbldePagamento
             // 
             this.lbldePagamento.AutoSize = true;
-            this.lbldePagamento.Location = new System.Drawing.Point(171, 67);
+            this.lbldePagamento.Location = new System.Drawing.Point(244, 86);
+            this.lbldePagamento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldePagamento.Name = "lbldePagamento";
-            this.lbldePagamento.Size = new System.Drawing.Size(102, 13);
+            this.lbldePagamento.Size = new System.Drawing.Size(136, 17);
             this.lbldePagamento.TabIndex = 11;
-            this.lbldePagamento.Text = "Data de Pagamento";
+            this.lbldePagamento.Text = "Data de Vencimento";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(264, 18);
+            this.label1.Location = new System.Drawing.Point(368, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Status";
             // 
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(171, 18);
+            this.lblValor.Location = new System.Drawing.Point(244, 26);
+            this.lblValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(31, 13);
+            this.lblValor.Size = new System.Drawing.Size(41, 17);
             this.lblValor.TabIndex = 9;
             this.lblValor.Text = "Valor";
             // 
             // lblSelCliente
             // 
             this.lblSelCliente.AutoSize = true;
-            this.lblSelCliente.Location = new System.Drawing.Point(3, 18);
+            this.lblSelCliente.Location = new System.Drawing.Point(14, 54);
+            this.lblSelCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelCliente.Name = "lblSelCliente";
-            this.lblSelCliente.Size = new System.Drawing.Size(108, 13);
+            this.lblSelCliente.Size = new System.Drawing.Size(142, 17);
             this.lblSelCliente.TabIndex = 7;
             this.lblSelCliente.Text = "Selecione seu cliente";
             // 
@@ -139,9 +144,10 @@
             this.txbStatus.Items.AddRange(new object[] {
             "Pendente",
             "Pago"});
-            this.txbStatus.Location = new System.Drawing.Point(262, 33);
+            this.txbStatus.Location = new System.Drawing.Point(365, 45);
+            this.txbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.txbStatus.Name = "txbStatus";
-            this.txbStatus.Size = new System.Drawing.Size(107, 21);
+            this.txbStatus.Size = new System.Drawing.Size(141, 24);
             this.txbStatus.TabIndex = 8;
             // 
             // cbCliente
@@ -149,9 +155,10 @@
             this.cbCliente.DataSource = this.pessoaBindingSource;
             this.cbCliente.DisplayMember = "Nome";
             this.cbCliente.FormattingEnabled = true;
-            this.cbCliente.Location = new System.Drawing.Point(3, 33);
+            this.cbCliente.Location = new System.Drawing.Point(14, 73);
+            this.cbCliente.Margin = new System.Windows.Forms.Padding(4);
             this.cbCliente.Name = "cbCliente";
-            this.cbCliente.Size = new System.Drawing.Size(157, 21);
+            this.cbCliente.Size = new System.Drawing.Size(208, 24);
             this.cbCliente.TabIndex = 7;
             this.cbCliente.ValueMember = "ID";
             // 
@@ -167,9 +174,10 @@
             // 
             // txbData_a_Pagar
             // 
-            this.txbData_a_Pagar.Location = new System.Drawing.Point(169, 82);
+            this.txbData_a_Pagar.Location = new System.Drawing.Point(241, 105);
+            this.txbData_a_Pagar.Margin = new System.Windows.Forms.Padding(4);
             this.txbData_a_Pagar.Name = "txbData_a_Pagar";
-            this.txbData_a_Pagar.Size = new System.Drawing.Size(200, 20);
+            this.txbData_a_Pagar.Size = new System.Drawing.Size(265, 22);
             this.txbData_a_Pagar.TabIndex = 6;
             // 
             // btnCad_Debito
@@ -178,9 +186,10 @@
             this.btnCad_Debito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCad_Debito.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCad_Debito.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCad_Debito.Location = new System.Drawing.Point(387, 33);
+            this.btnCad_Debito.Location = new System.Drawing.Point(516, 41);
+            this.btnCad_Debito.Margin = new System.Windows.Forms.Padding(4);
             this.btnCad_Debito.Name = "btnCad_Debito";
-            this.btnCad_Debito.Size = new System.Drawing.Size(75, 71);
+            this.btnCad_Debito.Size = new System.Drawing.Size(100, 87);
             this.btnCad_Debito.TabIndex = 5;
             this.btnCad_Debito.Text = "Cadastrar Debido";
             this.btnCad_Debito.UseVisualStyleBackColor = false;
@@ -188,47 +197,53 @@
             // 
             // txbValor
             // 
-            this.txbValor.Location = new System.Drawing.Point(169, 33);
+            this.txbValor.Location = new System.Drawing.Point(241, 45);
+            this.txbValor.Margin = new System.Windows.Forms.Padding(4);
             this.txbValor.Name = "txbValor";
-            this.txbValor.Size = new System.Drawing.Size(90, 20);
+            this.txbValor.Size = new System.Drawing.Size(119, 22);
             this.txbValor.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PagueBem.Properties.Resources.businessmen;
-            this.pictureBox1.Location = new System.Drawing.Point(449, -37);
+            this.pictureBox1.Location = new System.Drawing.Point(599, -46);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 206);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 254);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(21, 21);
+            this.txbNome.Location = new System.Drawing.Point(28, 26);
+            this.txbNome.Margin = new System.Windows.Forms.Padding(4);
             this.txbNome.Name = "txbNome";
-            this.txbNome.Size = new System.Drawing.Size(100, 20);
+            this.txbNome.Size = new System.Drawing.Size(132, 22);
             this.txbNome.TabIndex = 0;
             // 
             // txbCPF
             // 
-            this.txbCPF.Location = new System.Drawing.Point(21, 59);
+            this.txbCPF.Location = new System.Drawing.Point(28, 73);
+            this.txbCPF.Margin = new System.Windows.Forms.Padding(4);
             this.txbCPF.Name = "txbCPF";
-            this.txbCPF.Size = new System.Drawing.Size(100, 20);
+            this.txbCPF.Size = new System.Drawing.Size(132, 22);
             this.txbCPF.TabIndex = 1;
             // 
             // txbTelefone
             // 
-            this.txbTelefone.Location = new System.Drawing.Point(21, 95);
+            this.txbTelefone.Location = new System.Drawing.Point(28, 118);
+            this.txbTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.txbTelefone.Name = "txbTelefone";
-            this.txbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.txbTelefone.Size = new System.Drawing.Size(132, 22);
             this.txbTelefone.TabIndex = 2;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(139, 53);
+            this.btnCadastrar.Location = new System.Drawing.Point(195, 73);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(120, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(160, 28);
             this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "Incluir cliente";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -245,35 +260,39 @@
             this.panel2.Controls.Add(this.txbTelefone);
             this.panel2.Controls.Add(this.txbCPF);
             this.panel2.Controls.Add(this.txbNome);
-            this.panel2.Location = new System.Drawing.Point(2, 4);
+            this.panel2.Location = new System.Drawing.Point(3, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(301, 131);
+            this.panel2.Size = new System.Drawing.Size(401, 161);
             this.panel2.TabIndex = 1;
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(20, 82);
+            this.lblTelefone.Location = new System.Drawing.Point(27, 101);
+            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(52, 13);
+            this.lblTelefone.Size = new System.Drawing.Size(68, 17);
             this.lblTelefone.TabIndex = 6;
             this.lblTelefone.Text = "Telefone:";
             // 
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(20, 44);
+            this.lblCPF.Location = new System.Drawing.Point(27, 54);
+            this.lblCPF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(30, 13);
+            this.lblCPF.Size = new System.Drawing.Size(38, 17);
             this.lblCPF.TabIndex = 5;
             this.lblCPF.Text = "CPF:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(20, 5);
+            this.lblNome.Location = new System.Drawing.Point(27, 6);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(38, 13);
+            this.lblNome.Size = new System.Drawing.Size(49, 17);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome:";
             // 
@@ -291,58 +310,76 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.dataGridView1.DataSource = this.dataTable1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 141);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 174);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(856, 416);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1140, 512);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "idconta";
             this.dataGridViewTextBoxColumn1.HeaderText = "idconta";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Cpf";
             this.dataGridViewTextBoxColumn3.HeaderText = "Cpf";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Telefone";
             this.dataGridViewTextBoxColumn4.HeaderText = "Telefone";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "dataVenda";
             this.dataGridViewTextBoxColumn5.HeaderText = "dataVenda";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "dataVencimento";
             this.dataGridViewTextBoxColumn6.HeaderText = "dataVencimento";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "valor";
             this.dataGridViewTextBoxColumn7.HeaderText = "valor";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "status";
             this.dataGridViewTextBoxColumn8.HeaderText = "status";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // dataTable1BindingSource
             // 
@@ -369,13 +406,14 @@
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 563);
+            this.ClientSize = new System.Drawing.Size(1192, 693);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.Text = "Pague Bem";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
