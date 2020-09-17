@@ -58,7 +58,6 @@ C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\bin\Debug\System.Buffe
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\bin\Debug\System.Memory.xml
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.csprojAssemblyReference.cache
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.FrmPrincipal.resources
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.csproj.GenerateResource.cache
@@ -66,3 +65,4 @@ C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.csp
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.exe
 C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.pdb
+C:\Users\User\Documents\GitHub\PagueBem\PagueBem\PagueBem\obj\Debug\PagueBem.csprojAssemblyReference.cache

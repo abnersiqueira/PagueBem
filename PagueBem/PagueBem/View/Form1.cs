@@ -58,5 +58,19 @@ namespace PagueBem
 
         }
 
+        private void txbValor_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+
+        private void txbValor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)44 && e.KeyChar != (char)1)
+            {
+                e.Handled = true;
+
+            }
+        }
     }
 }
