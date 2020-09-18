@@ -14,7 +14,7 @@ namespace PagueBem.Connector
 
         public Conexao()
         {
-            con.ConnectionString = @"Server=127.0.0.1; Database = paguebembd; Uid = root; Pwd = 19954567";
+            con.ConnectionString = @"Server=127.0.0.1; Database = paguebembd; Uid = root; Pwd = 1234";
         }
 
         public MySqlConnection conectar()

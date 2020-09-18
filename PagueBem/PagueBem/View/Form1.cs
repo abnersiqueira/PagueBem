@@ -16,7 +16,32 @@ namespace PagueBem
         public FrmPrincipal()
         {
             InitializeComponent();
-                    }
+
+        }
+
+        public static void Moeda(ref TextBox txt)
+        {
+            String n = string.Empty;
+            double v = 0;
+            try
+            {
+                n = txt.Text.Replace(",", "").Replace(".", "");
+                if (n.Equals(""))
+                    n = "";
+                n = n.PadLeft(3, '0');
+                if (n.Length > 3 & n.Substring(0, 1) == "0")
+
+                    n = n.Substring(1, n.Length - 1);
+                v = Convert.ToDouble(n) / 100;
+                txt.Text = String.Format("{0:N}", v);
+                txt.SelectionStart = txt.Text.Length;
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -60,7 +85,7 @@ namespace PagueBem
 
         private void txbValor_TextChanged(object sender, EventArgs e)
         {
-          
+            Moeda(ref txbValor);
         }
 
 
@@ -71,6 +96,15 @@ namespace PagueBem
                 e.Handled = true;
 
             }
+        }
+
+        private void btnPesquisa_Click(object sender, EventArgs e)
+        {
+            Cad_Consulta consulta = new Cad_Consulta();          
+
+          
+                dataGridView1.DataSource = consulta.Localizar(dateTimeInicialCadastro.Value.ToString("yyyy/MM/dd"), dateTimeFinalCadastro.Value.ToString("yyyy/MM/dd"), dateTimeInicioVencimento.Value.ToString("yyyy/MM/dd"), dateTimeFinalVencimento.Value.ToString("yyyy/MM/dd"), cbStatusPesquisa.Text, CbPesqueisaCliente.Text);
+            
         }
     }
 }
