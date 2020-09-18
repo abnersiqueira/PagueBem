@@ -121,6 +121,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="paguebembdDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>paguebembdDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Form1.cs">
@@ -186,6 +191,17 @@
     </None>
     <None Include="paguebembdDataSet.xss">
       <DependentUpon>paguebembdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="paguebembdDataSet1.xsc">
+      <DependentUpon>paguebembdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="paguebembdDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>paguebembdDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="paguebembdDataSet1.xss">
+      <DependentUpon>paguebembdDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

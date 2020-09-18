@@ -40,19 +40,13 @@
             this.lblSelCliente = new System.Windows.Forms.Label();
             this.txbStatus = new System.Windows.Forms.ComboBox();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.pessoaBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.paguebembdDataSet = new PagueBem.paguebembdDataSet();
+            this.dataSetPessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_Pessoa = new PagueBem.DataSet_Pessoa();
             this.txbData_a_Pagar = new System.Windows.Forms.DateTimePicker();
             this.btnCad_Debito = new System.Windows.Forms.Button();
             this.txbValor = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pessoaBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSetTabelasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_Tabelas = new PagueBem.DataSet_Tabelas();
-            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_Pessoa = new PagueBem.DataSet_Pessoa();
-            this.pessoaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.paguebembdDataSet = new PagueBem.paguebembdDataSet();
             this.txbNome = new System.Windows.Forms.TextBox();
             this.txbCPF = new System.Windows.Forms.TextBox();
             this.txbTelefone = new System.Windows.Forms.TextBox();
@@ -63,23 +57,6 @@
             this.lblCPF = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idcontaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewINNERBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewINNERBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewINNERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1BindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.paguebembdDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaTableAdapter = new PagueBem.DataSet_TabelasTableAdapters.pessoaTableAdapter();
             this.panel3 = new System.Windows.Forms.Panel();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
@@ -105,59 +82,36 @@
             this.cbStatusPesquisa = new System.Windows.Forms.ComboBox();
             this.CbPesqueisaCliente = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dataSetPessoaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaTableAdapter1 = new PagueBem.DataSet_PessoaTableAdapters.pessoaTableAdapter();
-            this.fKIdPessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contaTableAdapter = new PagueBem.DataSet_TabelasTableAdapters.contaTableAdapter();
-            this.dataSetPessoaaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.pessoaTableAdapter2 = new PagueBem.paguebembdDataSetTableAdapters.pessoaTableAdapter();
-            this.pessoaBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.conexaoDataView = new PagueBem.ConexaoDataView();
-            this.conexaoDataViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1TableAdapter = new PagueBem.DataSet_TabelasTableAdapters.DataTable1TableAdapter();
-            this.dataGridWitchInnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1TableAdapter1 = new PagueBem.DataSet_TabelasTableAdapters.DataTable1TableAdapter1();
-            this.dataGridViewINNERBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaTableAdapter = new PagueBem.DataSet_PessoaTableAdapters.pessoaTableAdapter();
+            this.paguebembdDataSet1 = new PagueBem.paguebembdDataSet1();
+            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataTable1TableAdapter = new PagueBem.paguebembdDataSet1TableAdapters.DataTable1TableAdapter();
+            this.idcontaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetTabelasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Tabelas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1BindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKIdPessoaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conexaoDataView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conexaoDataViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridWitchInnerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -260,25 +214,25 @@
             // 
             // cbCliente
             // 
-            this.cbCliente.DataSource = this.pessoaBindingSource4;
+            this.cbCliente.DataSource = this.pessoaBindingSource;
             this.cbCliente.DisplayMember = "Nome";
             this.cbCliente.FormattingEnabled = true;
             this.cbCliente.Location = new System.Drawing.Point(14, 30);
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(202, 21);
             this.cbCliente.TabIndex = 4;
-            this.cbCliente.ValueMember = "Nome";
+            this.cbCliente.ValueMember = "ID";
             this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
-            // pessoaBindingSource4
+            // dataSetPessoaBindingSource
             // 
-            this.pessoaBindingSource4.DataMember = "pessoa";
-            this.pessoaBindingSource4.DataSource = this.paguebembdDataSet;
+            this.dataSetPessoaBindingSource.DataSource = this.dataSet_Pessoa;
+            this.dataSetPessoaBindingSource.Position = 0;
             // 
-            // paguebembdDataSet
+            // dataSet_Pessoa
             // 
-            this.paguebembdDataSet.DataSetName = "paguebembdDataSet";
-            this.paguebembdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataSet_Pessoa.DataSetName = "DataSet_Pessoa";
+            this.dataSet_Pessoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txbData_a_Pagar
             // 
@@ -325,40 +279,10 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // pessoaBindingSource5
+            // paguebembdDataSet
             // 
-            this.pessoaBindingSource5.DataMember = "pessoa";
-            this.pessoaBindingSource5.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataSetTabelasBindingSource
-            // 
-            this.dataSetTabelasBindingSource.DataSource = this.dataSet_Tabelas;
-            this.dataSetTabelasBindingSource.Position = 0;
-            // 
-            // dataSet_Tabelas
-            // 
-            this.dataSet_Tabelas.DataSetName = "DataSet_Tabelas";
-            this.dataSet_Tabelas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataTable1BindingSource1
-            // 
-            this.dataTable1BindingSource1.DataMember = "DataTable1";
-            this.dataTable1BindingSource1.DataSource = this.dataSet_Tabelas;
-            // 
-            // dataSet_Pessoa
-            // 
-            this.dataSet_Pessoa.DataSetName = "DataSet_Pessoa";
-            this.dataSet_Pessoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pessoaBindingSource1
-            // 
-            this.pessoaBindingSource1.DataMember = "pessoa";
-            this.pessoaBindingSource1.DataSource = this.dataSet_Pessoa;
-            // 
-            // pessoaBindingSource
-            // 
-            this.pessoaBindingSource.DataMember = "pessoa";
-            this.pessoaBindingSource.DataSource = this.dataSet_Tabelas;
+            this.paguebembdDataSet.DataSetName = "paguebembdDataSet";
+            this.paguebembdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txbNome
             // 
@@ -467,106 +391,12 @@
             this.dataVencimentoDataGridViewTextBoxColumn,
             this.valorDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.dataGridViewINNERBindingSource3;
+            this.dataGridView1.DataSource = this.dataTable1BindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 278);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(997, 349);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // idcontaDataGridViewTextBoxColumn
-            // 
-            this.idcontaDataGridViewTextBoxColumn.DataPropertyName = "idconta";
-            this.idcontaDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idcontaDataGridViewTextBoxColumn.Name = "idcontaDataGridViewTextBoxColumn";
-            this.idcontaDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "NOME";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // cpfDataGridViewTextBoxColumn
-            // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "CPF";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            this.cpfDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // telefoneDataGridViewTextBoxColumn
-            // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.HeaderText = "TELEFONE";
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
-            this.telefoneDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // dataVendaDataGridViewTextBoxColumn
-            // 
-            this.dataVendaDataGridViewTextBoxColumn.DataPropertyName = "dataVenda";
-            this.dataVendaDataGridViewTextBoxColumn.HeaderText = "DATA VENDA";
-            this.dataVendaDataGridViewTextBoxColumn.Name = "dataVendaDataGridViewTextBoxColumn";
-            this.dataVendaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // dataVencimentoDataGridViewTextBoxColumn
-            // 
-            this.dataVencimentoDataGridViewTextBoxColumn.DataPropertyName = "dataVencimento";
-            this.dataVencimentoDataGridViewTextBoxColumn.HeaderText = "DATA VENCIMENTO";
-            this.dataVencimentoDataGridViewTextBoxColumn.Name = "dataVencimentoDataGridViewTextBoxColumn";
-            this.dataVencimentoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // valorDataGridViewTextBoxColumn
-            // 
-            this.valorDataGridViewTextBoxColumn.DataPropertyName = "valor";
-            this.valorDataGridViewTextBoxColumn.HeaderText = "VALOR";
-            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "STATUS";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // dataGridViewINNERBindingSource3
-            // 
-            this.dataGridViewINNERBindingSource3.DataMember = "DataGridView_INNER";
-            this.dataGridViewINNERBindingSource3.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataGridViewINNERBindingSource1
-            // 
-            this.dataGridViewINNERBindingSource1.DataMember = "DataGridView_INNER";
-            this.dataGridViewINNERBindingSource1.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataGridViewINNERBindingSource
-            // 
-            this.dataGridViewINNERBindingSource.DataMember = "DataGridView_INNER";
-            this.dataGridViewINNERBindingSource.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataTable1BindingSource4
-            // 
-            this.dataTable1BindingSource4.DataMember = "DataTable1";
-            this.dataTable1BindingSource4.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataTable1BindingSource3
-            // 
-            this.dataTable1BindingSource3.DataMember = "DataTable1";
-            this.dataTable1BindingSource3.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataTable1BindingSource2
-            // 
-            this.dataTable1BindingSource2.DataMember = "DataTable1";
-            this.dataTable1BindingSource2.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.dataSet_Tabelas;
-            // 
-            // pessoaTableAdapter
-            // 
-            this.pessoaTableAdapter.ClearBeforeFill = true;
             // 
             // panel3
             // 
@@ -795,8 +625,7 @@
             // 
             // CbPesqueisaCliente
             // 
-            this.CbPesqueisaCliente.DataSource = this.pessoaBindingSource;
-            this.CbPesqueisaCliente.DisplayMember = "Nome";
+            this.CbPesqueisaCliente.DisplayMember = "ID";
             this.CbPesqueisaCliente.FormattingEnabled = true;
             this.CbPesqueisaCliente.Location = new System.Drawing.Point(3, 53);
             this.CbPesqueisaCliente.Name = "CbPesqueisaCliente";
@@ -814,60 +643,76 @@
             this.panel5.Size = new System.Drawing.Size(968, 174);
             this.panel5.TabIndex = 3;
             // 
-            // pessoaTableAdapter1
+            // pessoaBindingSource
             // 
-            this.pessoaTableAdapter1.ClearBeforeFill = true;
+            this.pessoaBindingSource.DataMember = "pessoa";
+            this.pessoaBindingSource.DataSource = this.dataSetPessoaBindingSource;
             // 
-            // fKIdPessoaBindingSource
+            // pessoaTableAdapter
             // 
-            this.fKIdPessoaBindingSource.DataMember = "FK_IdPessoa";
-            this.fKIdPessoaBindingSource.DataSource = this.pessoaBindingSource;
+            this.pessoaTableAdapter.ClearBeforeFill = true;
             // 
-            // contaTableAdapter
+            // paguebembdDataSet1
             // 
-            this.contaTableAdapter.ClearBeforeFill = true;
+            this.paguebembdDataSet1.DataSetName = "paguebembdDataSet1";
+            this.paguebembdDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pessoaBindingSource2
+            // dataTable1BindingSource
             // 
-            this.pessoaBindingSource2.DataMember = "pessoa";
-            this.pessoaBindingSource2.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // pessoaBindingSource3
-            // 
-            this.pessoaBindingSource3.DataMember = "pessoa";
-            this.pessoaBindingSource3.DataSource = this.dataSetTabelasBindingSource;
-            // 
-            // pessoaTableAdapter2
-            // 
-            this.pessoaTableAdapter2.ClearBeforeFill = true;
-            // 
-            // conexaoDataView
-            // 
-            this.conexaoDataView.DataSetName = "ConexaoDataView";
-            this.conexaoDataView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // conexaoDataViewBindingSource
-            // 
-            this.conexaoDataViewBindingSource.DataSource = this.conexaoDataView;
-            this.conexaoDataViewBindingSource.Position = 0;
+            this.dataTable1BindingSource.DataMember = "DataTable1";
+            this.dataTable1BindingSource.DataSource = this.paguebembdDataSet1;
             // 
             // dataTable1TableAdapter
             // 
             this.dataTable1TableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridWitchInnerBindingSource
+            // idcontaDataGridViewTextBoxColumn
             // 
-            this.dataGridWitchInnerBindingSource.DataMember = "DataGridWitchInner";
-            this.dataGridWitchInnerBindingSource.DataSource = this.dataSetTabelasBindingSource;
+            this.idcontaDataGridViewTextBoxColumn.DataPropertyName = "idconta";
+            this.idcontaDataGridViewTextBoxColumn.HeaderText = "idconta";
+            this.idcontaDataGridViewTextBoxColumn.Name = "idcontaDataGridViewTextBoxColumn";
             // 
-            // dataTable1TableAdapter1
+            // nomeDataGridViewTextBoxColumn
             // 
-            this.dataTable1TableAdapter1.ClearBeforeFill = true;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             // 
-            // dataGridViewINNERBindingSource2
+            // cpfDataGridViewTextBoxColumn
             // 
-            this.dataGridViewINNERBindingSource2.DataMember = "DataGridView_INNER";
-            this.dataGridViewINNERBindingSource2.DataSource = this.dataSetTabelasBindingSource;
+            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "Cpf";
+            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
+            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            // 
+            // dataVendaDataGridViewTextBoxColumn
+            // 
+            this.dataVendaDataGridViewTextBoxColumn.DataPropertyName = "dataVenda";
+            this.dataVendaDataGridViewTextBoxColumn.HeaderText = "dataVenda";
+            this.dataVendaDataGridViewTextBoxColumn.Name = "dataVendaDataGridViewTextBoxColumn";
+            // 
+            // dataVencimentoDataGridViewTextBoxColumn
+            // 
+            this.dataVencimentoDataGridViewTextBoxColumn.DataPropertyName = "dataVencimento";
+            this.dataVencimentoDataGridViewTextBoxColumn.HeaderText = "dataVencimento";
+            this.dataVencimentoDataGridViewTextBoxColumn.Name = "dataVencimentoDataGridViewTextBoxColumn";
+            // 
+            // valorDataGridViewTextBoxColumn
+            // 
+            this.valorDataGridViewTextBoxColumn.DataPropertyName = "valor";
+            this.valorDataGridViewTextBoxColumn.HeaderText = "valor";
+            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
             // FrmPrincipal
             // 
@@ -882,28 +727,14 @@
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetTabelasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Tabelas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1BindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -914,16 +745,9 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKIdPessoaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conexaoDataView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conexaoDataViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridWitchInnerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINNERBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -949,12 +773,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblSelCliente;
-        private System.Windows.Forms.BindingSource paguebembdDataSet1BindingSource;
-        private DataSet_Pessoa dataSet_Pessoa;
-        private DataSet_Tabelas dataSet_Tabelas;
-        private System.Windows.Forms.BindingSource pessoaBindingSource;
-        private DataSet_TabelasTableAdapters.pessoaTableAdapter pessoaTableAdapter;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
@@ -985,33 +803,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.BindingSource dataSetPessoaBindingSource1;
-        private System.Windows.Forms.BindingSource pessoaBindingSource1;
-        private DataSet_PessoaTableAdapters.pessoaTableAdapter pessoaTableAdapter1;
-        private System.Windows.Forms.BindingSource fKIdPessoaBindingSource;
-        private DataSet_TabelasTableAdapters.contaTableAdapter contaTableAdapter;
-        private System.Windows.Forms.BindingSource dataSetPessoaaBindingSource;
-        private System.Windows.Forms.BindingSource dataSetTabelasBindingSource;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
-        private System.Windows.Forms.BindingSource pessoaBindingSource2;
-        private System.Windows.Forms.BindingSource pessoaBindingSource3;
         private paguebembdDataSet paguebembdDataSet;
-        private paguebembdDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter2;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource2;
-        private System.Windows.Forms.BindingSource pessoaBindingSource4;
-        private System.Windows.Forms.BindingSource pessoaBindingSource5;
-        private System.Windows.Forms.BindingSource pessoaBindingSource6;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource3;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource4;
-        private ConexaoDataView conexaoDataView;
-        private System.Windows.Forms.BindingSource conexaoDataViewBindingSource;
-        private System.Windows.Forms.BindingSource dataGridViewINNERBindingSource;
-        private DataSet_TabelasTableAdapters.DataTable1TableAdapter dataTable1TableAdapter;
-        private System.Windows.Forms.BindingSource dataGridViewINNERBindingSource1;
-        private System.Windows.Forms.BindingSource dataGridWitchInnerBindingSource;
-        private DataSet_TabelasTableAdapters.DataTable1TableAdapter1 dataTable1TableAdapter1;
-        private System.Windows.Forms.BindingSource dataGridViewINNERBindingSource3;
-        private System.Windows.Forms.BindingSource dataGridViewINNERBindingSource2;
+        private System.Windows.Forms.BindingSource dataSetPessoaBindingSource;
+        private DataSet_Pessoa dataSet_Pessoa;
+        private System.Windows.Forms.BindingSource pessoaBindingSource;
+        private DataSet_PessoaTableAdapters.pessoaTableAdapter pessoaTableAdapter;
+        private paguebembdDataSet1 paguebembdDataSet1;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource;
+        private paguebembdDataSet1TableAdapters.DataTable1TableAdapter dataTable1TableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcontaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
