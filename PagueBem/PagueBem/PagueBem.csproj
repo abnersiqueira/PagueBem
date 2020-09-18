@@ -93,11 +93,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexaoDataView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConexaoDataView.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Connector\Conexao.cs" />
     <Compile Include="DataSet_Pessoa.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_Pessoa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Tabelas.cs">
+      <DependentUpon>DataSet_Tabelas.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSet_Tabelas.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -134,6 +142,17 @@
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ConexaoDataView.xsc">
+      <DependentUpon>ConexaoDataView.xsd</DependentUpon>
+    </None>
+    <None Include="ConexaoDataView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConexaoDataView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConexaoDataView.xss">
+      <DependentUpon>ConexaoDataView.xsd</DependentUpon>
+    </None>
     <None Include="DataSet_Pessoa.xsc">
       <DependentUpon>DataSet_Pessoa.xsd</DependentUpon>
     </None>

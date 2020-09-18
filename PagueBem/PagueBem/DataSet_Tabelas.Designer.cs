@@ -28,7 +28,9 @@ namespace PagueBem {
         
         private pessoaDataTable tablepessoa;
         
-        private DataTable1DataTable tableDataTable1;
+        private DataGridView_INNERDataTable tableDataGridView_INNER;
+        
+        private DataGridWitchInnerDataTable tableDataGridWitchInner;
         
         private global::System.Data.DataRelation relationFK_IdPessoa;
         
@@ -66,8 +68,11 @@ namespace PagueBem {
                 if ((ds.Tables["pessoa"] != null)) {
                     base.Tables.Add(new pessoaDataTable(ds.Tables["pessoa"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["DataGridView_INNER"] != null)) {
+                    base.Tables.Add(new DataGridView_INNERDataTable(ds.Tables["DataGridView_INNER"]));
+                }
+                if ((ds.Tables["DataGridWitchInner"] != null)) {
+                    base.Tables.Add(new DataGridWitchInnerDataTable(ds.Tables["DataGridWitchInner"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -111,9 +116,19 @@ namespace PagueBem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTable1DataTable DataTable1 {
+        public DataGridView_INNERDataTable DataGridView_INNER {
             get {
-                return this.tableDataTable1;
+                return this.tableDataGridView_INNER;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DataGridWitchInnerDataTable DataGridWitchInner {
+            get {
+                return this.tableDataGridWitchInner;
             }
         }
         
@@ -190,8 +205,11 @@ namespace PagueBem {
                 if ((ds.Tables["pessoa"] != null)) {
                     base.Tables.Add(new pessoaDataTable(ds.Tables["pessoa"]));
                 }
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["DataGridView_INNER"] != null)) {
+                    base.Tables.Add(new DataGridView_INNERDataTable(ds.Tables["DataGridView_INNER"]));
+                }
+                if ((ds.Tables["DataGridWitchInner"] != null)) {
+                    base.Tables.Add(new DataGridWitchInnerDataTable(ds.Tables["DataGridWitchInner"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -238,10 +256,16 @@ namespace PagueBem {
                     this.tablepessoa.InitVars();
                 }
             }
-            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
+            this.tableDataGridView_INNER = ((DataGridView_INNERDataTable)(base.Tables["DataGridView_INNER"]));
             if ((initTable == true)) {
-                if ((this.tableDataTable1 != null)) {
-                    this.tableDataTable1.InitVars();
+                if ((this.tableDataGridView_INNER != null)) {
+                    this.tableDataGridView_INNER.InitVars();
+                }
+            }
+            this.tableDataGridWitchInner = ((DataGridWitchInnerDataTable)(base.Tables["DataGridWitchInner"]));
+            if ((initTable == true)) {
+                if ((this.tableDataGridWitchInner != null)) {
+                    this.tableDataGridWitchInner.InitVars();
                 }
             }
             this.relationFK_IdPessoa = this.Relations["FK_IdPessoa"];
@@ -259,8 +283,10 @@ namespace PagueBem {
             base.Tables.Add(this.tableconta);
             this.tablepessoa = new pessoaDataTable();
             base.Tables.Add(this.tablepessoa);
-            this.tableDataTable1 = new DataTable1DataTable();
-            base.Tables.Add(this.tableDataTable1);
+            this.tableDataGridView_INNER = new DataGridView_INNERDataTable();
+            base.Tables.Add(this.tableDataGridView_INNER);
+            this.tableDataGridWitchInner = new DataGridWitchInnerDataTable();
+            base.Tables.Add(this.tableDataGridWitchInner);
             this.relationFK_IdPessoa = new global::System.Data.DataRelation("FK_IdPessoa", new global::System.Data.DataColumn[] {
                         this.tablepessoa.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableconta.FKPessoaColumn}, false);
@@ -281,7 +307,13 @@ namespace PagueBem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDataTable1() {
+        private bool ShouldSerializeDataGridView_INNER() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeDataGridWitchInner() {
             return false;
         }
         
@@ -347,7 +379,10 @@ namespace PagueBem {
         public delegate void pessoaRowChangeEventHandler(object sender, pessoaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        public delegate void DataGridView_INNERRowChangeEventHandler(object sender, DataGridView_INNERRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void DataGridWitchInnerRowChangeEventHandler(object sender, DataGridWitchInnerRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -996,7 +1031,7 @@ namespace PagueBem {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
+        public partial class DataGridView_INNERDataTable : global::System.Data.TypedTableBase<DataGridView_INNERRow> {
             
             private global::System.Data.DataColumn columnidconta;
             
@@ -1016,8 +1051,8 @@ namespace PagueBem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1DataTable() {
-                this.TableName = "DataTable1";
+            public DataGridView_INNERDataTable() {
+                this.TableName = "DataGridView_INNER";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1025,7 +1060,7 @@ namespace PagueBem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1DataTable(global::System.Data.DataTable table) {
+            internal DataGridView_INNERDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1042,7 +1077,7 @@ namespace PagueBem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DataGridView_INNERDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1122,34 +1157,34 @@ namespace PagueBem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row this[int index] {
+            public DataGridView_INNERRow this[int index] {
                 get {
-                    return ((DataTable1Row)(this.Rows[index]));
+                    return ((DataGridView_INNERRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
+            public event DataGridView_INNERRowChangeEventHandler DataGridView_INNERRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
+            public event DataGridView_INNERRowChangeEventHandler DataGridView_INNERRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
+            public event DataGridView_INNERRowChangeEventHandler DataGridView_INNERRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
+            public event DataGridView_INNERRowChangeEventHandler DataGridView_INNERRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDataTable1Row(DataTable1Row row) {
+            public void AddDataGridView_INNERRow(DataGridView_INNERRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string Nome, string Cpf, string Telefone, System.DateTime dataVenda, System.DateTime dataVencimento, int valor, string status) {
-                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
+            public DataGridView_INNERRow AddDataGridView_INNERRow(string Nome, string Cpf, string Telefone, System.DateTime dataVenda, System.DateTime dataVencimento, int valor, string status) {
+                DataGridView_INNERRow rowDataGridView_INNERRow = ((DataGridView_INNERRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Nome,
@@ -1159,22 +1194,22 @@ namespace PagueBem {
                         dataVencimento,
                         valor,
                         status};
-                rowDataTable1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTable1Row);
-                return rowDataTable1Row;
+                rowDataGridView_INNERRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDataGridView_INNERRow);
+                return rowDataGridView_INNERRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row FindByidconta(int idconta) {
-                return ((DataTable1Row)(this.Rows.Find(new object[] {
+            public DataGridView_INNERRow FindByidconta(int idconta) {
+                return ((DataGridView_INNERRow)(this.Rows.Find(new object[] {
                             idconta})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
+                DataGridView_INNERDataTable cln = ((DataGridView_INNERDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1182,7 +1217,7 @@ namespace PagueBem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTable1DataTable();
+                return new DataGridView_INNERDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1232,28 +1267,28 @@ namespace PagueBem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row NewDataTable1Row() {
-                return ((DataTable1Row)(this.NewRow()));
+            public DataGridView_INNERRow NewDataGridView_INNERRow() {
+                return ((DataGridView_INNERRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTable1Row(builder);
+                return new DataGridView_INNERRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTable1Row);
+                return typeof(DataGridView_INNERRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTable1RowChanged != null)) {
-                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.DataGridView_INNERRowChanged != null)) {
+                    this.DataGridView_INNERRowChanged(this, new DataGridView_INNERRowChangeEvent(((DataGridView_INNERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1261,8 +1296,8 @@ namespace PagueBem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTable1RowChanging != null)) {
-                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.DataGridView_INNERRowChanging != null)) {
+                    this.DataGridView_INNERRowChanging(this, new DataGridView_INNERRowChangeEvent(((DataGridView_INNERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1270,8 +1305,8 @@ namespace PagueBem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTable1RowDeleted != null)) {
-                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.DataGridView_INNERRowDeleted != null)) {
+                    this.DataGridView_INNERRowDeleted(this, new DataGridView_INNERRowChangeEvent(((DataGridView_INNERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1279,14 +1314,14 @@ namespace PagueBem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTable1RowDeleting != null)) {
-                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.DataGridView_INNERRowDeleting != null)) {
+                    this.DataGridView_INNERRowDeleting(this, new DataGridView_INNERRowChangeEvent(((DataGridView_INNERRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDataTable1Row(DataTable1Row row) {
+            public void RemoveDataGridView_INNERRow(DataGridView_INNERRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1313,7 +1348,370 @@ namespace PagueBem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTable1DataTable";
+                attribute2.FixedValue = "DataGridView_INNERDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DataGridWitchInnerDataTable : global::System.Data.TypedTableBase<DataGridWitchInnerRow> {
+            
+            private global::System.Data.DataColumn columnidconta;
+            
+            private global::System.Data.DataColumn columnNome;
+            
+            private global::System.Data.DataColumn columnCpf;
+            
+            private global::System.Data.DataColumn columnTelefone;
+            
+            private global::System.Data.DataColumn columndataVenda;
+            
+            private global::System.Data.DataColumn columndataVencimento;
+            
+            private global::System.Data.DataColumn columnvalor;
+            
+            private global::System.Data.DataColumn columnstatus;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerDataTable() {
+                this.TableName = "DataGridWitchInner";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal DataGridWitchInnerDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected DataGridWitchInnerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn idcontaColumn {
+                get {
+                    return this.columnidconta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NomeColumn {
+                get {
+                    return this.columnNome;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CpfColumn {
+                get {
+                    return this.columnCpf;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TelefoneColumn {
+                get {
+                    return this.columnTelefone;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn dataVendaColumn {
+                get {
+                    return this.columndataVenda;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn dataVencimentoColumn {
+                get {
+                    return this.columndataVencimento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn valorColumn {
+                get {
+                    return this.columnvalor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn statusColumn {
+                get {
+                    return this.columnstatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRow this[int index] {
+                get {
+                    return ((DataGridWitchInnerRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DataGridWitchInnerRowChangeEventHandler DataGridWitchInnerRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DataGridWitchInnerRowChangeEventHandler DataGridWitchInnerRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DataGridWitchInnerRowChangeEventHandler DataGridWitchInnerRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DataGridWitchInnerRowChangeEventHandler DataGridWitchInnerRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddDataGridWitchInnerRow(DataGridWitchInnerRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRow AddDataGridWitchInnerRow(string Nome, string Cpf, string Telefone, System.DateTime dataVenda, System.DateTime dataVencimento, int valor, string status) {
+                DataGridWitchInnerRow rowDataGridWitchInnerRow = ((DataGridWitchInnerRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Nome,
+                        Cpf,
+                        Telefone,
+                        dataVenda,
+                        dataVencimento,
+                        valor,
+                        status};
+                rowDataGridWitchInnerRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDataGridWitchInnerRow);
+                return rowDataGridWitchInnerRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRow FindByidconta(int idconta) {
+                return ((DataGridWitchInnerRow)(this.Rows.Find(new object[] {
+                            idconta})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DataGridWitchInnerDataTable cln = ((DataGridWitchInnerDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DataGridWitchInnerDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnidconta = base.Columns["idconta"];
+                this.columnNome = base.Columns["Nome"];
+                this.columnCpf = base.Columns["Cpf"];
+                this.columnTelefone = base.Columns["Telefone"];
+                this.columndataVenda = base.Columns["dataVenda"];
+                this.columndataVencimento = base.Columns["dataVencimento"];
+                this.columnvalor = base.Columns["valor"];
+                this.columnstatus = base.Columns["status"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnidconta = new global::System.Data.DataColumn("idconta", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidconta);
+                this.columnNome = new global::System.Data.DataColumn("Nome", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNome);
+                this.columnCpf = new global::System.Data.DataColumn("Cpf", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCpf);
+                this.columnTelefone = new global::System.Data.DataColumn("Telefone", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelefone);
+                this.columndataVenda = new global::System.Data.DataColumn("dataVenda", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndataVenda);
+                this.columndataVencimento = new global::System.Data.DataColumn("dataVencimento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndataVencimento);
+                this.columnvalor = new global::System.Data.DataColumn("valor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvalor);
+                this.columnstatus = new global::System.Data.DataColumn("status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstatus);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnidconta}, true));
+                this.columnidconta.AutoIncrement = true;
+                this.columnidconta.AutoIncrementSeed = -1;
+                this.columnidconta.AutoIncrementStep = -1;
+                this.columnidconta.AllowDBNull = false;
+                this.columnidconta.Unique = true;
+                this.columnNome.MaxLength = 100;
+                this.columnCpf.MaxLength = 11;
+                this.columnTelefone.MaxLength = 14;
+                this.columnstatus.MaxLength = 45;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRow NewDataGridWitchInnerRow() {
+                return ((DataGridWitchInnerRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DataGridWitchInnerRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DataGridWitchInnerRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DataGridWitchInnerRowChanged != null)) {
+                    this.DataGridWitchInnerRowChanged(this, new DataGridWitchInnerRowChangeEvent(((DataGridWitchInnerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DataGridWitchInnerRowChanging != null)) {
+                    this.DataGridWitchInnerRowChanging(this, new DataGridWitchInnerRowChangeEvent(((DataGridWitchInnerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DataGridWitchInnerRowDeleted != null)) {
+                    this.DataGridWitchInnerRowDeleted(this, new DataGridWitchInnerRowChangeEvent(((DataGridWitchInnerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DataGridWitchInnerRowDeleting != null)) {
+                    this.DataGridWitchInnerRowDeleting(this, new DataGridWitchInnerRowChangeEvent(((DataGridWitchInnerRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveDataGridWitchInnerRow(DataGridWitchInnerRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet_Tabelas ds = new DataSet_Tabelas();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DataGridWitchInnerDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1638,25 +2036,25 @@ namespace PagueBem {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTable1Row : global::System.Data.DataRow {
+        public partial class DataGridView_INNERRow : global::System.Data.DataRow {
             
-            private DataTable1DataTable tableDataTable1;
+            private DataGridView_INNERDataTable tableDataGridView_INNER;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
+            internal DataGridView_INNERRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
+                this.tableDataGridView_INNER = ((DataGridView_INNERDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int idconta {
                 get {
-                    return ((int)(this[this.tableDataTable1.idcontaColumn]));
+                    return ((int)(this[this.tableDataGridView_INNER.idcontaColumn]));
                 }
                 set {
-                    this[this.tableDataTable1.idcontaColumn] = value;
+                    this[this.tableDataGridView_INNER.idcontaColumn] = value;
                 }
             }
             
@@ -1665,14 +2063,14 @@ namespace PagueBem {
             public string Nome {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.NomeColumn]));
+                        return ((string)(this[this.tableDataGridView_INNER.NomeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Nome\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Nome\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.NomeColumn] = value;
+                    this[this.tableDataGridView_INNER.NomeColumn] = value;
                 }
             }
             
@@ -1681,14 +2079,14 @@ namespace PagueBem {
             public string Cpf {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.CpfColumn]));
+                        return ((string)(this[this.tableDataGridView_INNER.CpfColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Cpf\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Cpf\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.CpfColumn] = value;
+                    this[this.tableDataGridView_INNER.CpfColumn] = value;
                 }
             }
             
@@ -1697,14 +2095,14 @@ namespace PagueBem {
             public string Telefone {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.TelefoneColumn]));
+                        return ((string)(this[this.tableDataGridView_INNER.TelefoneColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Telefone\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Telefone\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.TelefoneColumn] = value;
+                    this[this.tableDataGridView_INNER.TelefoneColumn] = value;
                 }
             }
             
@@ -1713,14 +2111,14 @@ namespace PagueBem {
             public System.DateTime dataVenda {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableDataTable1.dataVendaColumn]));
+                        return ((global::System.DateTime)(this[this.tableDataGridView_INNER.dataVendaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVenda\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVenda\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.dataVendaColumn] = value;
+                    this[this.tableDataGridView_INNER.dataVendaColumn] = value;
                 }
             }
             
@@ -1729,14 +2127,14 @@ namespace PagueBem {
             public System.DateTime dataVencimento {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableDataTable1.dataVencimentoColumn]));
+                        return ((global::System.DateTime)(this[this.tableDataGridView_INNER.dataVencimentoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVencimento\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVencimento\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.dataVencimentoColumn] = value;
+                    this[this.tableDataGridView_INNER.dataVencimentoColumn] = value;
                 }
             }
             
@@ -1745,14 +2143,14 @@ namespace PagueBem {
             public int valor {
                 get {
                     try {
-                        return ((int)(this[this.tableDataTable1.valorColumn]));
+                        return ((int)(this[this.tableDataGridView_INNER.valorColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'valor\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'valor\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.valorColumn] = value;
+                    this[this.tableDataGridView_INNER.valorColumn] = value;
                 }
             }
             
@@ -1761,99 +2159,321 @@ namespace PagueBem {
             public string status {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.statusColumn]));
+                        return ((string)(this[this.tableDataGridView_INNER.statusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'status\' na tabela \'DataTable1\' é DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'status\' na tabela \'DataGridView_INNER\' é DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.statusColumn] = value;
+                    this[this.tableDataGridView_INNER.statusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsNomeNull() {
-                return this.IsNull(this.tableDataTable1.NomeColumn);
+                return this.IsNull(this.tableDataGridView_INNER.NomeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetNomeNull() {
-                this[this.tableDataTable1.NomeColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.NomeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsCpfNull() {
-                return this.IsNull(this.tableDataTable1.CpfColumn);
+                return this.IsNull(this.tableDataGridView_INNER.CpfColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetCpfNull() {
-                this[this.tableDataTable1.CpfColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.CpfColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsTelefoneNull() {
-                return this.IsNull(this.tableDataTable1.TelefoneColumn);
+                return this.IsNull(this.tableDataGridView_INNER.TelefoneColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetTelefoneNull() {
-                this[this.tableDataTable1.TelefoneColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.TelefoneColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsdataVendaNull() {
-                return this.IsNull(this.tableDataTable1.dataVendaColumn);
+                return this.IsNull(this.tableDataGridView_INNER.dataVendaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetdataVendaNull() {
-                this[this.tableDataTable1.dataVendaColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.dataVendaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsdataVencimentoNull() {
-                return this.IsNull(this.tableDataTable1.dataVencimentoColumn);
+                return this.IsNull(this.tableDataGridView_INNER.dataVencimentoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetdataVencimentoNull() {
-                this[this.tableDataTable1.dataVencimentoColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.dataVencimentoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsvalorNull() {
-                return this.IsNull(this.tableDataTable1.valorColumn);
+                return this.IsNull(this.tableDataGridView_INNER.valorColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetvalorNull() {
-                this[this.tableDataTable1.valorColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.valorColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsstatusNull() {
-                return this.IsNull(this.tableDataTable1.statusColumn);
+                return this.IsNull(this.tableDataGridView_INNER.statusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetstatusNull() {
-                this[this.tableDataTable1.statusColumn] = global::System.Convert.DBNull;
+                this[this.tableDataGridView_INNER.statusColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DataGridWitchInnerRow : global::System.Data.DataRow {
+            
+            private DataGridWitchInnerDataTable tableDataGridWitchInner;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal DataGridWitchInnerRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDataGridWitchInner = ((DataGridWitchInnerDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int idconta {
+                get {
+                    return ((int)(this[this.tableDataGridWitchInner.idcontaColumn]));
+                }
+                set {
+                    this[this.tableDataGridWitchInner.idcontaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Nome {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataGridWitchInner.NomeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Nome\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.NomeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Cpf {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataGridWitchInner.CpfColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Cpf\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.CpfColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Telefone {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataGridWitchInner.TelefoneColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'Telefone\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.TelefoneColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime dataVenda {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDataGridWitchInner.dataVendaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVenda\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.dataVendaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime dataVencimento {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDataGridWitchInner.dataVencimentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'dataVencimento\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.dataVencimentoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int valor {
+                get {
+                    try {
+                        return ((int)(this[this.tableDataGridWitchInner.valorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'valor\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.valorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string status {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataGridWitchInner.statusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'status\' na tabela \'DataGridWitchInner\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataGridWitchInner.statusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNomeNull() {
+                return this.IsNull(this.tableDataGridWitchInner.NomeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNomeNull() {
+                this[this.tableDataGridWitchInner.NomeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCpfNull() {
+                return this.IsNull(this.tableDataGridWitchInner.CpfColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCpfNull() {
+                this[this.tableDataGridWitchInner.CpfColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTelefoneNull() {
+                return this.IsNull(this.tableDataGridWitchInner.TelefoneColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTelefoneNull() {
+                this[this.tableDataGridWitchInner.TelefoneColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsdataVendaNull() {
+                return this.IsNull(this.tableDataGridWitchInner.dataVendaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetdataVendaNull() {
+                this[this.tableDataGridWitchInner.dataVendaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsdataVencimentoNull() {
+                return this.IsNull(this.tableDataGridWitchInner.dataVencimentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetdataVencimentoNull() {
+                this[this.tableDataGridWitchInner.dataVencimentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsvalorNull() {
+                return this.IsNull(this.tableDataGridWitchInner.valorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetvalorNull() {
+                this[this.tableDataGridWitchInner.valorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsstatusNull() {
+                return this.IsNull(this.tableDataGridWitchInner.statusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetstatusNull() {
+                this[this.tableDataGridWitchInner.statusColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1929,22 +2549,56 @@ namespace PagueBem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DataTable1RowChangeEvent : global::System.EventArgs {
+        public class DataGridView_INNERRowChangeEvent : global::System.EventArgs {
             
-            private DataTable1Row eventRow;
+            private DataGridView_INNERRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
+            public DataGridView_INNERRowChangeEvent(DataGridView_INNERRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row Row {
+            public DataGridView_INNERRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class DataGridWitchInnerRowChangeEvent : global::System.EventArgs {
+            
+            private DataGridWitchInnerRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRowChangeEvent(DataGridWitchInnerRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DataGridWitchInnerRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3258,7 +3912,7 @@ namespace PagueBem.DataSet_TabelasTableAdapters {
             this._adapter = new global::MySql.Data.MySqlClient.MySqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DataTable1";
+            tableMapping.DataSetTable = "DataGridView_INNER";
             tableMapping.ColumnMappings.Add("idconta", "idconta");
             tableMapping.ColumnMappings.Add("Nome", "Nome");
             tableMapping.ColumnMappings.Add("Cpf", "Cpf");
@@ -3293,7 +3947,7 @@ namespace PagueBem.DataSet_TabelasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet_Tabelas.DataTable1DataTable dataTable) {
+        public virtual int Fill(DataSet_Tabelas.DataGridView_INNERDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3306,9 +3960,185 @@ namespace PagueBem.DataSet_TabelasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet_Tabelas.DataTable1DataTable GetData() {
+        public virtual DataSet_Tabelas.DataGridView_INNERDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet_Tabelas.DataTable1DataTable dataTable = new DataSet_Tabelas.DataTable1DataTable();
+            DataSet_Tabelas.DataGridView_INNERDataTable dataTable = new DataSet_Tabelas.DataGridView_INNERDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class DataTable1TableAdapter1 : global::System.ComponentModel.Component {
+        
+        private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
+        
+        private global::MySql.Data.MySqlClient.MySqlConnection _connection;
+        
+        private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
+        
+        private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public DataTable1TableAdapter1() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::MySql.Data.MySqlClient.MySqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::MySql.Data.MySqlClient.MySqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "DataGridWitchInner";
+            tableMapping.ColumnMappings.Add("idconta", "idconta");
+            tableMapping.ColumnMappings.Add("Nome", "Nome");
+            tableMapping.ColumnMappings.Add("Cpf", "Cpf");
+            tableMapping.ColumnMappings.Add("Telefone", "Telefone");
+            tableMapping.ColumnMappings.Add("dataVenda", "dataVenda");
+            tableMapping.ColumnMappings.Add("dataVencimento", "dataVencimento");
+            tableMapping.ColumnMappings.Add("valor", "valor");
+            tableMapping.ColumnMappings.Add("status", "status");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
+            this._connection.ConnectionString = global::PagueBem.Properties.Settings.Default.StringConexao_DataView;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
+            this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        conta.idconta, pessoa.Nome, pessoa.Cpf, pessoa.Telefone, conta.data" +
+                "Venda, conta.dataVencimento, conta.valor, conta.status\r\nFROM            conta IN" +
+                "NER JOIN\r\n                         pessoa ON conta.FKPessoa = pessoa.ID";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet_Tabelas.DataGridWitchInnerDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet_Tabelas.DataGridWitchInnerDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet_Tabelas.DataGridWitchInnerDataTable dataTable = new DataSet_Tabelas.DataGridWitchInnerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

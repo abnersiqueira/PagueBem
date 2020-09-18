@@ -92,7 +92,7 @@ namespace PagueBem
                 txbNome.Text = "";
                 txbCPF.Text = "";
                 txbTelefone.Text = "";
-                this.dataTable1TableAdapter.Fill(this.dataSet_Tabelas.DataTable1);
+                this.dataTable1TableAdapter.Fill(this.dataSet_Tabelas.DataGridView_INNER);
             }
             else
             {
@@ -116,6 +116,10 @@ namespace PagueBem
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'dataSet_Tabelas.DataGridWitchInner'. Você pode movê-la ou removê-la conforme necessário.
+            this.dataTable1TableAdapter1.Fill(this.dataSet_Tabelas.DataGridWitchInner);
+            // TODO: esta linha de código carrega dados na tabela 'dataSet_Tabelas.DataGridView_INNER'. Você pode movê-la ou removê-la conforme necessário.
+            this.dataTable1TableAdapter.Fill(this.dataSet_Tabelas.DataGridView_INNER);
             // TODO: esta linha de código carrega dados na tabela 'paguebembdDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
             this.pessoaTableAdapter2.Fill(this.paguebembdDataSet.pessoa);
             // TODO: esta linha de código carrega dados na tabela 'dataSet_Tabelas.conta'. Você pode movê-la ou removê-la conforme necessário.
@@ -126,6 +130,16 @@ namespace PagueBem
 
         private void txbValor_TextChanged(object sender, EventArgs e)
         {
+            Double txbValorTemp; 
+
+            txbValorTemp = Convert.ToDouble(txbValor.Text);
+
+            if(txbValorTemp < 0)
+            {
+                MessageBox.Show("O valor não pode ser negativo", "Valor negativo");
+            }
+
+
             Moeda(ref txbValor);
         }
 
