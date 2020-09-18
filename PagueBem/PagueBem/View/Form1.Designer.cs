@@ -40,17 +40,25 @@
             this.lblSelCliente = new System.Windows.Forms.Label();
             this.txbStatus = new System.Windows.Forms.ComboBox();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetTabelasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet_Tabelas = new PagueBem.DataSet_Tabelas();
             this.txbData_a_Pagar = new System.Windows.Forms.DateTimePicker();
             this.btnCad_Debito = new System.Windows.Forms.Button();
             this.txbValor = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pessoaBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.paguebembdDataSet = new PagueBem.paguebembdDataSet();
+            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_Pessoa = new PagueBem.DataSet_Pessoa();
+            this.pessoaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txbNome = new System.Windows.Forms.TextBox();
             this.txbCPF = new System.Windows.Forms.TextBox();
             this.txbTelefone = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -63,10 +71,9 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataTable1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paguebembdDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_Pessoa = new PagueBem.DataSet_Pessoa();
-            this.dataSetPessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pessoaTableAdapter = new PagueBem.DataSet_TabelasTableAdapters.pessoaTableAdapter();
             this.dataTable1TableAdapter = new PagueBem.DataSet_TabelasTableAdapters.DataTable1TableAdapter();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -74,6 +81,8 @@
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -82,33 +91,56 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimeFinalVencimento = new System.Windows.Forms.DateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.dateTimeInicialCadastro = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimeFinalCadastro = new System.Windows.Forms.DateTimePicker();
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cbStatusPesquisa = new System.Windows.Forms.ComboBox();
             this.CbPesqueisaCliente = new System.Windows.Forms.ComboBox();
-            this.txbPesquisaCliente = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dateTimeInicialCadastro = new System.Windows.Forms.DateTimePicker();
+            this.dataSetPessoaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaTableAdapter1 = new PagueBem.DataSet_PessoaTableAdapters.pessoaTableAdapter();
+            this.fKIdPessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contaTableAdapter = new PagueBem.DataSet_TabelasTableAdapters.contaTableAdapter();
+            this.dataSetPessoaaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaTableAdapter2 = new PagueBem.paguebembdDataSetTableAdapters.pessoaTableAdapter();
+            this.pessoaBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataTable1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetTabelasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Tabelas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKIdPessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -134,20 +166,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(697, 175);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCad_Pesquisar
             // 
-            this.btnCad_Pesquisar.Location = new System.Drawing.Point(425, 128);
+            this.btnCad_Pesquisar.Location = new System.Drawing.Point(452, 87);
             this.btnCad_Pesquisar.Name = "btnCad_Pesquisar";
             this.btnCad_Pesquisar.Size = new System.Drawing.Size(75, 23);
-            this.btnCad_Pesquisar.TabIndex = 15;
+            this.btnCad_Pesquisar.TabIndex = 10;
             this.btnCad_Pesquisar.Text = "Pesquisar";
             this.btnCad_Pesquisar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 65);
+            this.label2.Location = new System.Drawing.Point(13, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 14;
@@ -155,15 +188,15 @@
             // 
             // txbData_a_Inicio
             // 
-            this.txbData_a_Inicio.Location = new System.Drawing.Point(3, 80);
+            this.txbData_a_Inicio.Location = new System.Drawing.Point(13, 81);
             this.txbData_a_Inicio.Name = "txbData_a_Inicio";
             this.txbData_a_Inicio.Size = new System.Drawing.Size(200, 20);
-            this.txbData_a_Inicio.TabIndex = 13;
+            this.txbData_a_Inicio.TabIndex = 7;
             // 
             // lbldePagamento
             // 
             this.lbldePagamento.AutoSize = true;
-            this.lbldePagamento.Location = new System.Drawing.Point(221, 65);
+            this.lbldePagamento.Location = new System.Drawing.Point(228, 66);
             this.lbldePagamento.Name = "lbldePagamento";
             this.lbldePagamento.Size = new System.Drawing.Size(104, 13);
             this.lbldePagamento.TabIndex = 11;
@@ -172,7 +205,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(312, 14);
+            this.label1.Location = new System.Drawing.Point(356, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 10;
@@ -181,7 +214,7 @@
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(219, 14);
+            this.lblValor.Location = new System.Drawing.Point(257, 14);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(31, 13);
             this.lblValor.TabIndex = 9;
@@ -190,7 +223,7 @@
             // lblSelCliente
             // 
             this.lblSelCliente.AutoSize = true;
-            this.lblSelCliente.Location = new System.Drawing.Point(3, 14);
+            this.lblSelCliente.Location = new System.Drawing.Point(22, 15);
             this.lblSelCliente.Name = "lblSelCliente";
             this.lblSelCliente.Size = new System.Drawing.Size(108, 13);
             this.lblSelCliente.TabIndex = 7;
@@ -199,29 +232,36 @@
             // txbStatus
             // 
             this.txbStatus.FormattingEnabled = true;
+            this.txbStatus.ItemHeight = 13;
             this.txbStatus.Items.AddRange(new object[] {
             "Pendente",
             "Pago"});
-            this.txbStatus.Location = new System.Drawing.Point(310, 29);
+            this.txbStatus.Location = new System.Drawing.Point(323, 30);
             this.txbStatus.Name = "txbStatus";
             this.txbStatus.Size = new System.Drawing.Size(107, 21);
             this.txbStatus.TabIndex = 8;
             // 
             // cbCliente
             // 
-            this.cbCliente.DataSource = this.pessoaBindingSource;
+            this.cbCliente.DataSource = this.pessoaBindingSource4;
             this.cbCliente.DisplayMember = "Nome";
             this.cbCliente.FormattingEnabled = true;
-            this.cbCliente.Location = new System.Drawing.Point(3, 29);
+            this.cbCliente.Location = new System.Drawing.Point(14, 30);
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(202, 21);
-            this.cbCliente.TabIndex = 7;
-            this.cbCliente.ValueMember = "ID";
+            this.cbCliente.TabIndex = 4;
+            this.cbCliente.ValueMember = "Nome";
+            this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
-            // pessoaBindingSource
+            // pessoaBindingSource5
             // 
-            this.pessoaBindingSource.DataMember = "pessoa";
-            this.pessoaBindingSource.DataSource = this.dataSet_Tabelas;
+            this.pessoaBindingSource5.DataMember = "pessoa";
+            this.pessoaBindingSource5.DataSource = this.dataSetTabelasBindingSource;
+            // 
+            // dataSetTabelasBindingSource
+            // 
+            this.dataSetTabelasBindingSource.DataSource = this.dataSet_Tabelas;
+            this.dataSetTabelasBindingSource.Position = 0;
             // 
             // dataSet_Tabelas
             // 
@@ -230,71 +270,110 @@
             // 
             // txbData_a_Pagar
             // 
-            this.txbData_a_Pagar.Location = new System.Drawing.Point(219, 80);
+            this.txbData_a_Pagar.Location = new System.Drawing.Point(218, 81);
             this.txbData_a_Pagar.Name = "txbData_a_Pagar";
             this.txbData_a_Pagar.Size = new System.Drawing.Size(200, 20);
-            this.txbData_a_Pagar.TabIndex = 6;
+            this.txbData_a_Pagar.TabIndex = 8;
             // 
             // btnCad_Debito
             // 
-            this.btnCad_Debito.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCad_Debito.BackColor = System.Drawing.Color.White;
             this.btnCad_Debito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCad_Debito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCad_Debito.FlatAppearance.BorderSize = 0;
+            this.btnCad_Debito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCad_Debito.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCad_Debito.ForeColor = System.Drawing.Color.Black;
-            this.btnCad_Debito.Location = new System.Drawing.Point(425, 29);
+            this.btnCad_Debito.ForeColor = System.Drawing.Color.Maroon;
+            this.btnCad_Debito.Image = global::PagueBem.Properties.Resources.get_cash_96px;
+            this.btnCad_Debito.Location = new System.Drawing.Point(452, 113);
+            this.btnCad_Debito.Margin = new System.Windows.Forms.Padding(0);
             this.btnCad_Debito.Name = "btnCad_Debito";
-            this.btnCad_Debito.Size = new System.Drawing.Size(75, 71);
-            this.btnCad_Debito.TabIndex = 5;
-            this.btnCad_Debito.Text = "Cadastrar Debido";
+            this.btnCad_Debito.Size = new System.Drawing.Size(75, 60);
+            this.btnCad_Debito.TabIndex = 9;
+            this.btnCad_Debito.Text = "Cadastrar Débito";
+            this.btnCad_Debito.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCad_Debito.UseVisualStyleBackColor = false;
             this.btnCad_Debito.Click += new System.EventHandler(this.btnCad_Debito_Click);
             // 
             // txbValor
             // 
-            this.txbValor.Location = new System.Drawing.Point(217, 29);
+            this.txbValor.Location = new System.Drawing.Point(224, 30);
             this.txbValor.Name = "txbValor";
             this.txbValor.Size = new System.Drawing.Size(90, 20);
-            this.txbValor.TabIndex = 3;
+            this.txbValor.TabIndex = 5;
             this.txbValor.TextChanged += new System.EventHandler(this.txbValor_TextChanged);
             this.txbValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbValor_KeyPress);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PagueBem.Properties.Resources.businessmen;
-            this.pictureBox1.Location = new System.Drawing.Point(523, -25);
+            this.pictureBox1.Location = new System.Drawing.Point(549, -33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 207);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // pessoaBindingSource4
+            // 
+            this.pessoaBindingSource4.DataMember = "pessoa";
+            this.pessoaBindingSource4.DataSource = this.paguebembdDataSet;
+            // 
+            // paguebembdDataSet
+            // 
+            this.paguebembdDataSet.DataSetName = "paguebembdDataSet";
+            this.paguebembdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataTable1BindingSource1
+            // 
+            this.dataTable1BindingSource1.DataMember = "DataTable1";
+            this.dataTable1BindingSource1.DataSource = this.dataSet_Tabelas;
+            // 
+            // dataSet_Pessoa
+            // 
+            this.dataSet_Pessoa.DataSetName = "DataSet_Pessoa";
+            this.dataSet_Pessoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pessoaBindingSource1
+            // 
+            this.pessoaBindingSource1.DataMember = "pessoa";
+            this.pessoaBindingSource1.DataSource = this.dataSet_Pessoa;
+            // 
+            // pessoaBindingSource
+            // 
+            this.pessoaBindingSource.DataMember = "pessoa";
+            this.pessoaBindingSource.DataSource = this.dataSet_Tabelas;
+            // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(32, 36);
+            this.txbNome.Location = new System.Drawing.Point(12, 30);
             this.txbNome.Name = "txbNome";
-            this.txbNome.Size = new System.Drawing.Size(100, 20);
+            this.txbNome.Size = new System.Drawing.Size(159, 20);
             this.txbNome.TabIndex = 0;
             // 
             // txbCPF
             // 
-            this.txbCPF.Location = new System.Drawing.Point(32, 75);
+            this.txbCPF.Location = new System.Drawing.Point(12, 65);
             this.txbCPF.Name = "txbCPF";
-            this.txbCPF.Size = new System.Drawing.Size(100, 20);
+            this.txbCPF.Size = new System.Drawing.Size(118, 20);
             this.txbCPF.TabIndex = 1;
+            this.txbCPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCPF_KeyPress);
+            this.txbCPF.Leave += new System.EventHandler(this.txbCPF_Leave);
             // 
             // txbTelefone
             // 
-            this.txbTelefone.Location = new System.Drawing.Point(32, 112);
+            this.txbTelefone.Location = new System.Drawing.Point(12, 101);
             this.txbTelefone.Name = "txbTelefone";
-            this.txbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.txbTelefone.Size = new System.Drawing.Size(118, 20);
             this.txbTelefone.TabIndex = 2;
+            this.txbTelefone.TextChanged += new System.EventHandler(this.txbTelefone_TextChanged);
+            this.txbTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTelefone_KeyPress);
+            this.txbTelefone.Leave += new System.EventHandler(this.txbTelefone_Leave);
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(136, 75);
+            this.btnCadastrar.Location = new System.Drawing.Point(145, 135);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(120, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(104, 23);
             this.btnCadastrar.TabIndex = 3;
             this.btnCadastrar.Text = "Incluir cliente";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -304,6 +383,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.lblTelefone);
             this.panel2.Controls.Add(this.lblCPF);
             this.panel2.Controls.Add(this.lblNome);
@@ -317,10 +397,20 @@
             this.panel2.Size = new System.Drawing.Size(264, 174);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PagueBem.Properties.Resources.add_user_group_man_man_80px;
+            this.pictureBox3.Location = new System.Drawing.Point(186, 87);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
+            // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(31, 97);
+            this.lblTelefone.Location = new System.Drawing.Point(11, 86);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(52, 13);
             this.lblTelefone.TabIndex = 6;
@@ -329,7 +419,7 @@
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(31, 60);
+            this.lblCPF.Location = new System.Drawing.Point(11, 50);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(30, 13);
             this.lblCPF.TabIndex = 5;
@@ -338,7 +428,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(31, 21);
+            this.lblNome.Location = new System.Drawing.Point(11, 15);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 4;
@@ -360,11 +450,11 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
-            this.dataGridView1.DataSource = this.dataTable1BindingSource;
+            this.dataGridView1.DataSource = this.dataTable1BindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(0, 278);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(970, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(970, 349);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -431,20 +521,15 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
+            // dataTable1BindingSource2
+            // 
+            this.dataTable1BindingSource2.DataMember = "DataTable1";
+            this.dataTable1BindingSource2.DataSource = this.dataSetTabelasBindingSource;
+            // 
             // dataTable1BindingSource
             // 
             this.dataTable1BindingSource.DataMember = "DataTable1";
             this.dataTable1BindingSource.DataSource = this.dataSet_Tabelas;
-            // 
-            // dataSet_Pessoa
-            // 
-            this.dataSet_Pessoa.DataSetName = "DataSet_Pessoa";
-            this.dataSet_Pessoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSetPessoaBindingSource
-            // 
-            this.dataSetPessoaBindingSource.DataSource = this.dataSet_Pessoa;
-            this.dataSetPessoaBindingSource.Position = 0;
             // 
             // pessoaTableAdapter
             // 
@@ -497,39 +582,59 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.btnPesquisa);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.cbStatusPesquisa);
             this.panel4.Controls.Add(this.CbPesqueisaCliente);
-            this.panel4.Controls.Add(this.txbPesquisaCliente);
-            this.panel4.Location = new System.Drawing.Point(12, 610);
+            this.panel4.Location = new System.Drawing.Point(12, 633);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(623, 205);
+            this.panel4.Size = new System.Drawing.Size(956, 190);
             this.panel4.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(-4, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(211, 24);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "FILTRO CLIENTES";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PagueBem.Properties.Resources.search_96px;
+            this.pictureBox2.Location = new System.Drawing.Point(424, 155);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(177, 120);
+            this.label11.Location = new System.Drawing.Point(658, 84);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 13);
+            this.label11.Size = new System.Drawing.Size(128, 13);
             this.label11.TabIndex = 33;
-            this.label11.Text = "Data do vencimento";
+            this.label11.Text = "DATA DE VENCIMENTO";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(168, 44);
+            this.label10.Location = new System.Drawing.Point(180, 84);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 13);
+            this.label10.Size = new System.Drawing.Size(175, 13);
             this.label10.TabIndex = 32;
-            this.label10.Text = "Data do Cadatro da Conta ";
+            this.label10.Text = "DATA DO CADASTRO DA CONTA";
             // 
             // panel7
             // 
@@ -538,15 +643,15 @@
             this.panel7.Controls.Add(this.dateTimeInicioVencimento);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.dateTimeFinalVencimento);
-            this.panel7.Location = new System.Drawing.Point(13, 136);
+            this.panel7.Location = new System.Drawing.Point(489, 100);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(420, 52);
+            this.panel7.Size = new System.Drawing.Size(463, 52);
             this.panel7.TabIndex = 31;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 3);
+            this.label8.Location = new System.Drawing.Point(76, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 30;
@@ -557,12 +662,12 @@
             this.dateTimeInicioVencimento.Location = new System.Drawing.Point(3, 18);
             this.dateTimeInicioVencimento.Name = "dateTimeInicioVencimento";
             this.dateTimeInicioVencimento.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeInicioVencimento.TabIndex = 29;
+            this.dateTimeInicioVencimento.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(221, 3);
+            this.label9.Location = new System.Drawing.Point(289, 3);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
             this.label9.TabIndex = 28;
@@ -570,10 +675,10 @@
             // 
             // dateTimeFinalVencimento
             // 
-            this.dateTimeFinalVencimento.Location = new System.Drawing.Point(219, 18);
+            this.dateTimeFinalVencimento.Location = new System.Drawing.Point(209, 19);
             this.dateTimeFinalVencimento.Name = "dateTimeFinalVencimento";
             this.dateTimeFinalVencimento.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeFinalVencimento.TabIndex = 27;
+            this.dateTimeFinalVencimento.TabIndex = 18;
             // 
             // panel6
             // 
@@ -582,15 +687,22 @@
             this.panel6.Controls.Add(this.label3);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.dateTimeFinalCadastro);
-            this.panel6.Location = new System.Drawing.Point(13, 60);
+            this.panel6.Location = new System.Drawing.Point(2, 100);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(430, 52);
+            this.panel6.Size = new System.Drawing.Size(481, 52);
             this.panel6.TabIndex = 28;
+            // 
+            // dateTimeInicialCadastro
+            // 
+            this.dateTimeInicialCadastro.Location = new System.Drawing.Point(6, 19);
+            this.dateTimeInicialCadastro.Name = "dateTimeInicialCadastro";
+            this.dateTimeInicialCadastro.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeInicialCadastro.TabIndex = 15;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Location = new System.Drawing.Point(70, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 30;
@@ -599,7 +711,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(221, 3);
+            this.label4.Location = new System.Drawing.Point(346, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 28;
@@ -607,14 +719,14 @@
             // 
             // dateTimeFinalCadastro
             // 
-            this.dateTimeFinalCadastro.Location = new System.Drawing.Point(219, 18);
+            this.dateTimeFinalCadastro.Location = new System.Drawing.Point(273, 18);
             this.dateTimeFinalCadastro.Name = "dateTimeFinalCadastro";
             this.dateTimeFinalCadastro.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeFinalCadastro.TabIndex = 27;
+            this.dateTimeFinalCadastro.TabIndex = 16;
             // 
             // btnPesquisa
             // 
-            this.btnPesquisa.Location = new System.Drawing.Point(534, 57);
+            this.btnPesquisa.Location = new System.Drawing.Point(453, 158);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisa.TabIndex = 27;
@@ -625,25 +737,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(322, 6);
+            this.label5.Location = new System.Drawing.Point(368, 37);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 23;
             this.label5.Text = "Status";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(229, 6);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Valor";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 6);
+            this.label7.Location = new System.Drawing.Point(0, 37);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 13);
             this.label7.TabIndex = 19;
@@ -652,10 +755,11 @@
             // cbStatusPesquisa
             // 
             this.cbStatusPesquisa.FormattingEnabled = true;
+            this.cbStatusPesquisa.ItemHeight = 13;
             this.cbStatusPesquisa.Items.AddRange(new object[] {
             "Pendente",
             "Pago"});
-            this.cbStatusPesquisa.Location = new System.Drawing.Point(320, 21);
+            this.cbStatusPesquisa.Location = new System.Drawing.Point(333, 53);
             this.cbStatusPesquisa.Name = "cbStatusPesquisa";
             this.cbStatusPesquisa.Size = new System.Drawing.Size(107, 21);
             this.cbStatusPesquisa.TabIndex = 21;
@@ -665,18 +769,11 @@
             this.CbPesqueisaCliente.DataSource = this.pessoaBindingSource;
             this.CbPesqueisaCliente.DisplayMember = "Nome";
             this.CbPesqueisaCliente.FormattingEnabled = true;
-            this.CbPesqueisaCliente.Location = new System.Drawing.Point(13, 21);
+            this.CbPesqueisaCliente.Location = new System.Drawing.Point(3, 53);
             this.CbPesqueisaCliente.Name = "CbPesqueisaCliente";
-            this.CbPesqueisaCliente.Size = new System.Drawing.Size(202, 21);
-            this.CbPesqueisaCliente.TabIndex = 20;
+            this.CbPesqueisaCliente.Size = new System.Drawing.Size(308, 21);
+            this.CbPesqueisaCliente.TabIndex = 11;
             this.CbPesqueisaCliente.ValueMember = "ID";
-            // 
-            // txbPesquisaCliente
-            // 
-            this.txbPesquisaCliente.Location = new System.Drawing.Point(227, 21);
-            this.txbPesquisaCliente.Name = "txbPesquisaCliente";
-            this.txbPesquisaCliente.Size = new System.Drawing.Size(90, 20);
-            this.txbPesquisaCliente.TabIndex = 16;
             // 
             // panel5
             // 
@@ -688,12 +785,37 @@
             this.panel5.Size = new System.Drawing.Size(968, 174);
             this.panel5.TabIndex = 3;
             // 
-            // dateTimeInicialCadastro
+            // pessoaTableAdapter1
             // 
-            this.dateTimeInicialCadastro.Location = new System.Drawing.Point(6, 19);
-            this.dateTimeInicialCadastro.Name = "dateTimeInicialCadastro";
-            this.dateTimeInicialCadastro.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeInicialCadastro.TabIndex = 31;
+            this.pessoaTableAdapter1.ClearBeforeFill = true;
+            // 
+            // fKIdPessoaBindingSource
+            // 
+            this.fKIdPessoaBindingSource.DataMember = "FK_IdPessoa";
+            this.fKIdPessoaBindingSource.DataSource = this.pessoaBindingSource;
+            // 
+            // contaTableAdapter
+            // 
+            this.contaTableAdapter.ClearBeforeFill = true;
+            // 
+            // pessoaBindingSource2
+            // 
+            this.pessoaBindingSource2.DataMember = "pessoa";
+            this.pessoaBindingSource2.DataSource = this.dataSetTabelasBindingSource;
+            // 
+            // pessoaBindingSource3
+            // 
+            this.pessoaBindingSource3.DataMember = "pessoa";
+            this.pessoaBindingSource3.DataSource = this.dataSetTabelasBindingSource;
+            // 
+            // pessoaTableAdapter2
+            // 
+            this.pessoaTableAdapter2.ClearBeforeFill = true;
+            // 
+            // dataTable1BindingSource3
+            // 
+            this.dataTable1BindingSource3.DataMember = "DataTable1";
+            this.dataTable1BindingSource3.DataSource = this.dataSetTabelasBindingSource;
             // 
             // FrmPrincipal
             // 
@@ -708,25 +830,40 @@
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetTabelasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_Tabelas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paguebembdDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_Pessoa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKIdPessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPessoaaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -754,21 +891,12 @@
         private System.Windows.Forms.Label lblSelCliente;
         private System.Windows.Forms.BindingSource paguebembdDataSet1BindingSource;
         private DataSet_Pessoa dataSet_Pessoa;
-        private System.Windows.Forms.BindingSource dataSetPessoaBindingSource;
         private DataSet_Tabelas dataSet_Tabelas;
         private System.Windows.Forms.BindingSource pessoaBindingSource;
         private DataSet_TabelasTableAdapters.pessoaTableAdapter pessoaTableAdapter;
         private System.Windows.Forms.BindingSource dataTable1BindingSource;
         private DataSet_TabelasTableAdapters.DataTable1TableAdapter dataTable1TableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnCad_Pesquisar;
@@ -785,11 +913,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbStatusPesquisa;
         private System.Windows.Forms.ComboBox CbPesqueisaCliente;
-        private System.Windows.Forms.TextBox txbPesquisaCliente;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
@@ -797,5 +923,33 @@
         private System.Windows.Forms.DateTimePicker dateTimeInicioVencimento;
         private System.Windows.Forms.DateTimePicker dateTimeFinalCadastro;
         private System.Windows.Forms.DateTimePicker dateTimeInicialCadastro;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.BindingSource dataSetPessoaBindingSource1;
+        private System.Windows.Forms.BindingSource pessoaBindingSource1;
+        private DataSet_PessoaTableAdapters.pessoaTableAdapter pessoaTableAdapter1;
+        private System.Windows.Forms.BindingSource fKIdPessoaBindingSource;
+        private DataSet_TabelasTableAdapters.contaTableAdapter contaTableAdapter;
+        private System.Windows.Forms.BindingSource dataSetPessoaaBindingSource;
+        private System.Windows.Forms.BindingSource dataSetTabelasBindingSource;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
+        private System.Windows.Forms.BindingSource pessoaBindingSource2;
+        private System.Windows.Forms.BindingSource pessoaBindingSource3;
+        private paguebembdDataSet paguebembdDataSet;
+        private paguebembdDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter2;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.BindingSource pessoaBindingSource4;
+        private System.Windows.Forms.BindingSource pessoaBindingSource5;
+        private System.Windows.Forms.BindingSource pessoaBindingSource6;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource3;
     }
 }

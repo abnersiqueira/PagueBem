@@ -118,10 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="businessmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\businessmen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_user_group_man_man_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\add_user_group_man_man_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\search_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="get_cash_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\get_cash_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="51yUXWbUHUL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\51yUXWbUHUL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\search_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="businessmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\businessmen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="get_cash_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\get_cash_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

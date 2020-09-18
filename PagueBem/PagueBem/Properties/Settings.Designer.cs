@@ -64,5 +64,16 @@ namespace PagueBem.Properties {
                 return ((string)(this["paguebembdConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=paguebembd;password=19954567;persistsecuri" +
+            "tyinfo=True")]
+        public string DataSet_Pessoaa {
+            get {
+                return ((string)(this["DataSet_Pessoaa"]));
+            }
+        }
     }
 }
